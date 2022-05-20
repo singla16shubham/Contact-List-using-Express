@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <title>
+            <%= title  %> 
+        </title>
+        
+    </head>
+    <body>
+      <h1>
+          Play ground
+      </h1>
+      <ul>
+        <% for(let i=0;i<6;i++) { %>
+            <li>
+              <%=i%>
+           </li>
+        <%}
+         %> 
+      </ul>
+      <%if(!true){
+          %>
+          <h1>It is True!</h1>
+          <%
+      }
+      else{
+          %>
+          <p>Not true false</p>
+          <%
+      }
+      %>
+     
+    </body>
+</html>
